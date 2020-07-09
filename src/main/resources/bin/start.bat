@@ -1,0 +1,1 @@
+java -Xbootclasspath/a:../conf    -jar  ../apps/${project.build.finalName}.jar
