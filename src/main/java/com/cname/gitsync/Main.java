@@ -8,7 +8,7 @@ import java.util.TimerTask;
 public class Main{
 
         public static void main(String[] args) throws IOException {
-            GitSyncModel model= ConfUtils.readConf("conf/sync.properties");
+            GitSyncModel model= ConfUtils.readConf("sync.properties");
             final GitSyncClient client = GitSyncClient.getGitClient(model.getUri(), model.getUsername(), model.getPassword(), model.getLocalDir());
             Timer timer=new Timer();
             TimerTask task=new TimerTask(){
